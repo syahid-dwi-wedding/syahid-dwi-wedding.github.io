@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+      body {
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        font-family: "EB Garamond", serif;
+      }
+
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .tagline {
+        margin-top: 0;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 5px 15px;
+        background-color: #ffffff;
+        color: #000000;
+        border: none;
+        box-shadow: 5px 5px 0px 0px #000000;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        outline: 2px solid #000000;
+      }
+
+      .footer {
+        margin-top: 100px;
+        font-size: 15px;
+        color: #888888;
+      }
+    </style>
+    <title>Wedding Syahid - Dwi</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="title">Wedding Celebration Invitation</div>
+        <p class="tagline">Syahid & Dwi</p>
+      </div>
+      <div class="img" style="margin-top: 40px; margin-bottom: 40px">
+        <img src="vector.png" width="250" alt="Wedding Image" />
+      </div>
+
+      <p>
+        Hi <span id="to">Fulan</span>, We cordially invite you to join us in
+        celebrating our wedding. Your presence and blessings are highly
+        appreciated as we embark on this new journey together.
+      </p>
+
+      <p>
+        Saturday, 16 July 2023 | 01.00 PM - end<br />At Wonokerto - Pekalongan
+      </p>
+
+      <a
+        href="https://goo.gl/maps/T4JppfRnR1GWqBFK7"
+        class="button"
+        target="_blank"
+        >View on Map</a
+      >
+
+      <div class="footer">
+        <p>
+          &copy; 2023 All rights reserved. <br />
+          Assisted by ChatGPT
+        </p>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const to = urlParams.get("to");
+    document.getElementById("to").innerHTML = to;
+  </script>
+</html>
